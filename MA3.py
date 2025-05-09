@@ -7,7 +7,7 @@ Date reviewed:
 
 """
 import random
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import math as m
 import concurrent.futures as future
 from statistics import mean 
@@ -33,10 +33,10 @@ def approximate_pi(n): # Ex1
     pi = 4*nc/n
     print(f'Approximation of pi using Monte Carlo with {n} points is {pi}')
 
-    # plt.scatter(ncx, ncy, color='red')
-    # plt.scatter(nsx, nsy, color='blue')
-    # filename = f'plot_{n}_points_mc_pi'
-    # plt.savefig(filename)        
+    plt.scatter(ncx, ncy, color='red')
+    plt.scatter(nsx, nsy, color='blue')
+    filename = f'plot_{n}_points_mc_pi'
+    plt.savefig(filename)        
     return pi
 
 def sphere_volume(n, d): #Ex2, approximation
